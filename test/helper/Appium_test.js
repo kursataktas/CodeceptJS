@@ -1,9 +1,7 @@
-const assert = require('assert')
+const chai = require('chai');
+const expect = chai.expect;
+const assert = chai.assert;
 
-let expect
-import('chai').then((chai) => {
-  expect = chai.expect
-})
 const path = require('path')
 
 const Appium = require('../../lib/helper/Appium')

@@ -1,9 +1,7 @@
 const path = require('path')
 
-let expect
-import('chai').then((chai) => {
-  expect = chai.expect
-})
+const chai = require('chai');
+const expect = chai.expect;
 
 const SoftAssertHelper = require('../../lib/helper/SoftExpectHelper')
 

@@ -1,7 +1,5 @@
-let expect
-import('chai').then((chai) => {
-  expect = chai.expect
-})
+const chai = require('chai');
+const expect = chai.expect;
 const joi = require('joi')
 const JSONResponse = require('../../lib/helper/JSONResponse')
 const Container = require('../../lib/container')

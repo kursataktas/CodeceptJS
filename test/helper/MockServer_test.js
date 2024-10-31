@@ -1,9 +1,8 @@
 const path = require('path')
 
-let expect
-import('chai').then((chai) => {
-  expect = chai.expect
-})
+const chai = require('chai');
+const expect = chai.expect;
+
 const { like } = require('pactum-matchers')
 const MockServer = require('../../lib/helper/MockServer')
 const REST = require('../../lib/helper/REST')

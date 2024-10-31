@@ -1,15 +1,6 @@
-const assert = require('assert')
-
-let expect
-import('chai').then((chai) => {
-  expect = chai.expect
-})
-const path = require('path')
-
-const Appium = require('../../lib/helper/Appium')
-const AssertionFailedError = require('../../lib/assert/error')
-const fileExists = require('../../lib/utils').fileExists
-global.codeceptjs = require('../../lib')
+const chai = require('chai');
+const expect = chai.expect;
+const assert = chai.assert;
 
 let app
 const apk_path = 'storage:filename=selendroid-test-app-0.17.0.apk'
