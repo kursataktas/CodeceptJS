@@ -1,11 +1,8 @@
-const chai = require('chai');
-const expect = chai.expect;
-const assert = chai.assert;
+const chai = require('chai')
 
-let expect
-import('chai').then((chai) => {
-  expect = chai.expect
-})
+const expect = chai.expect
+const assert = chai.assert
+
 const path = require('path')
 const fs = require('fs')
 

@@ -1,7 +1,8 @@
 const path = require('path')
 
-const chai = require('chai');
-const expect = chai.expect;
+const chai = require('chai')
+
+const expect = chai.expect
 
 const { like } = require('pactum-matchers')
 const MockServer = require('../../lib/helper/MockServer')

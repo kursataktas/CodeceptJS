@@ -1,6 +1,7 @@
-const chai = require('chai');
-const assert = chai.assert;
-const expect = chai.expect;
+const chai = require('chai')
+
+const assert = chai.assert
+const expect = chai.expect
 
 const path = require('path')
 const fs = require('fs')
