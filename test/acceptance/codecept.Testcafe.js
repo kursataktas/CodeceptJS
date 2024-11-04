@@ -9,7 +9,9 @@ module.exports.config = {
       url: TestHelper.siteUrl(),
       show: true,
     },
-    ExpectHelper: {},
+    Expect: {
+      require: '@codeceptjs/expect-helper',
+    },
   },
   include: {},
   bootstrap: false,

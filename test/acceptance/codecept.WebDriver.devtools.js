@@ -21,7 +21,10 @@ module.exports.config = {
       require: '../support/ScreenshotSessionHelper.js',
       outputPath: './output',
     },
-    ExpectHelper: {},
+    Expect: {
+      require: '@codeceptjs/expect-helper',
+    },
+
   },
   include: {},
   bootstrap: async () =>

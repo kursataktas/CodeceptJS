@@ -112,6 +112,7 @@
   },
   "devDependencies": {
     "@apollo/server": "^4",
+    "@codeceptjs/expect-helper": "^0.1.0",
     "@codeceptjs/mock-request": "0.3.1",
     "@faker-js/faker": "9.0.3",
     "@pollyjs/adapter-puppeteer": "6.0.6",
