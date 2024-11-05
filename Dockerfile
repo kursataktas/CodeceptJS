@@ -1,5 +1,5 @@
 # Download Playwright and its dependencies
-FROM mcr.microsoft.com/playwright:v1.39.0
+FROM mcr.microsoft.com/playwright:v1.48.1-noble
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
 
 # Installing the pre-required packages and libraries
@@ -29,7 +29,7 @@ RUN groupadd -r pptruser && useradd -r -g pptruser -G audio,video pptruser \
 COPY . /codecept
 
 RUN chown -R pptruser:pptruser /codecept
-RUN runuser -l pptruser -c 'npm i --force --loglevel=warn --prefix /codecept'
+RUN runuser -l pptruser -c 'npm i --loglevel=warn --prefix /codecept'
 
 RUN ln -s /codecept/bin/codecept.js /usr/local/bin/codeceptjs
 RUN mkdir /tests
