@@ -39,8 +39,7 @@
     "json-server:graphql": "node test/data/graphql/index.js",
     "lint": "eslint bin/ examples/ lib/ test/ translations/ runok.js",
     "lint-fix": "eslint bin/ examples/ lib/ test/ translations/ runok.js --fix",
-    "prettier": "git diff --name-only --cached --diff-filter=d | grep '\\.js' | xargs npx prettier --write",
-    "prettier:all": "prettier --config prettier.config.js --write bin/**/*.js lib/**/*.js test/**/*.js translations/**/*.js runok.js",
+    "prettier": "prettier --config prettier.config.js --write bin/**/*.js lib/**/*.js test/**/*.js translations/**/*.js runok.js",
     "docs": "./runok.js docs",
     "test:unit": "mocha test/unit --recursive --timeout 10000",
     "test:runner": "mocha test/runner --recursive --timeout 10000",
@@ -64,7 +63,7 @@
     "update-contributor-faces": "./runok.js contributor:faces",
     "types-fix": "node typings/fixDefFiles.js",
     "dtslint": "npm run types-fix && tsd",
-    "prepare": "husky install",
+    "prepare": "husky",
     "prepare-release": "./runok.js versioning && ./runok.js get:commit-log",
     "publish-beta": "./runok.js publish:next-beta-version"
   },
