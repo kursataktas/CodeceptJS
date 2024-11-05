@@ -24,7 +24,6 @@ module.exports.config = {
     Expect: {
       require: '@codeceptjs/expect-helper',
     },
-
   },
   include: {},
   bootstrap: async () =>
