@@ -4,8 +4,8 @@ ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
 
 # Installing the pre-required packages and libraries
 RUN apt-get update && \
-      apt-get install -y libgtk2.0-0 libgconf-2-4 \
-      libasound2 libxtst6 libxss1 libnss3 xvfb
+      apt-get install -y libgtk2.0-0 \
+      libxtst6 libxss1 libnss3 xvfb
 
 # Install latest chrome dev package and fonts to support major charsets (Chinese, Japanese, Arabic, Hebrew, Thai and a few others)
 # Note: this installs the necessary libs to make the bundled version of Chromium that Puppeteer
