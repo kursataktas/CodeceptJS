@@ -39,7 +39,7 @@
     "json-server:graphql": "node test/data/graphql/index.js",
     "lint": "eslint bin/ examples/ lib/ test/ translations/ runok.js",
     "lint-fix": "eslint bin/ examples/ lib/ test/ translations/ runok.js --fix",
-    "prettier": "prettier --config prettier.config.js --write bin/**/*.js lib/**/*.js test/**/*.js translations/**/*.js runok.js",
+    "prettier": "prettier --config prettier.config.js --cached --write bin/**/*.js lib/**/*.js test/**/*.js translations/**/*.js runok.js",
     "docs": "./runok.js docs",
     "test:unit": "mocha test/unit --recursive --timeout 10000",
     "test:runner": "mocha test/runner --recursive --timeout 10000",
