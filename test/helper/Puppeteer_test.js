@@ -32,7 +32,7 @@ describe('Puppeteer - BasicAuth', function () {
 
     I = new Puppeteer({
       url: siteUrl,
-      windowSize: '500x700',
+      // windowSize: '500x700',
       show: false,
       waitForTimeout: 5000,
       waitForAction: 500,
@@ -192,6 +192,17 @@ describe('Puppeteer', function () {
         .then(() => I.waitToHide('//div[@id="step_1"]', 2))
         .then(() => I.dontSeeElement('//div[@id="step_1"]'))
         .then(() => I.dontSee('Step One Button'))
+    })
+
+    it('should wait for invisible combined with dontseeElement', async () => {
+      await I.amOnPage('https://codecept.io/')
+      await I.waitForVisible('.frameworks')
+      await I.waitForVisible('[alt="React"]')
+      await I.waitForVisible('.mountains')
+      await I._withinBegin('.mountains', async () => {
+        await I.dontSeeElement('[alt="React"]')
+        await I.waitForInvisible('[alt="React"]', 2)
+      })
     })
   })
 
