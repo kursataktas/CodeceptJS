@@ -37,7 +37,7 @@ describe('Playwright', function () {
 
     I = new Playwright({
       url: siteUrl,
-      //windowSize: '500x700',
+      // windowSize: '500x700',
       browser: process.env.BROWSER || 'chromium',
       show: false,
       waitForTimeout: 5000,
